@@ -1,0 +1,26 @@
+{% extends "_includes/default.njk" %}
+
+{% block title %}Pearl Nayker &bull; purrl.org{% endblock %}
+
+{% block content %}
+	<div class="font-serif flex flex-col gap-8">
+		<h1 class="font-serif text-7xl">Pearl Nayker</h1>
+		<p class="font-serif text-4xl italic">professional kity</p>
+		<img class="mt-36 w-[75px] h-[54px]" src="/assets/kity@2x.png" alt="A kity. From far away, a lioness, with a frock of coral hair, sits, watching." />
+		<div class="flex flex-row gap-8">
+			<a href="https://cohost.org/purrl" alt="@purrl on Cohost">
+				{{ '/assets/cohost.svg' | svgContents("w-[25px] h-[25px]") | safe }}
+			</a>
+			<a href="https://twitter.com/purrloftruth" alt="@purrloftruth on Twitter">
+				{{ '/assets/twitter.svg' | svgContents("w-[25px] h-[25px]") | safe }}
+			</a>
+			<a href="https://twitch.tv/coralfluff" alt="Coralfluff on Twitch">
+				{{ '/assets/twitch.svg' | svgContents("w-[25px] h-[25px]") | safe }}
+			</a>
+			<a href="https://t.me/purrl" alt="@purrl on Telegram">
+				{{ '/assets/telegram.svg' | svgContents("w-[25px] h-[25px]") | safe }}
+			</a>
+		</div>
+	</div>
+		
+{% endblock %}

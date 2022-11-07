@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en" class="h-full">
+
+  <head>
+		<link rel="preconnect" href="https://fonts.bunny.net">
+    <title>
+      {% block title %}purrl.org{% endblock %}
+    </title>
+    <meta charset="UTF-8"/>
+    {% if description %}
+      <meta name="description" content="{{description}}"/>
+    {% endif %}
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+		<link href="https://fonts.bunny.net/css?family=libre-baskerville:400,400i" rel="stylesheet" />
+		<link rel="stylesheet" href="/style.css?v={% version %}"/>
+
+    {% block head %}{% endblock %}
+  </head>
+
+  <body class="flex h-full bg-background text-foreground fill-foreground">
+		<div class="flex-auto place-self-center mx-auto lg:max-w-2xl px-4">
+			{% block content %}
+				{{ content | safe }}
+			{% endblock %}
+		</div>
+  </body>
+
+</html>
