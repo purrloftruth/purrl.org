@@ -8,7 +8,7 @@ module.exports = {
 				if (serviceData.canonicalName == "Mastodon") {
 					// If we have a leading @, we might start with a blank entry in the array, so filter that out
 					const components = network.handle.split("@").filter(x => x.length > 0)
-					network.url = serviceData.baseUrl + components[1] + "/" + components[0]
+					network.url = serviceData.baseUrl + components[1] + "/@" + components[0]
 				}
 				network.altText = serviceData.prefix + network.handle + " on " + serviceData.canonicalName
 				network.svgUrl = serviceData.img
