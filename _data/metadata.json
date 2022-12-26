@@ -1,0 +1,41 @@
+{
+  "title": "purrl.org",
+  "baseUrl": "https://purrl.org/",
+  "language": "en",
+  "description": "The personal website of Pearl Nayker",
+  "author": {
+    "name": "Pearl Nayker",
+    "email": "",
+    "url": ""
+  },
+
+	"landing": {
+		"header": "Pearl Nayker",
+		"subheader": "professional kity",
+		"img": "/assets/og.png",
+		"imgAlt": "A kity. From far away, a lioness, with a frock of coral hair, sits, watching."
+	},
+
+	"socials": [
+		{
+			"service": "cohost",
+			"handle": "purrl"
+		},
+		{
+			"service": "mastodon",
+			"handle": "@purrl@meemu.org"
+		},
+		{
+			"service": "twitter",
+			"handle": "purrloftruth"
+		},
+		{
+			"service": "twitch",
+			"handle": "Coralfluff"
+		},
+		{
+			"service": "telegram",
+			"handle": "purrl"
+		}
+	]
+}

@@ -3,18 +3,29 @@
 <html lang="en" class="h-full">
 
   <head>
+		{% set ogImgUrl %}{{ og_img | url }}{% endset %}
+		
+		{% metagen 
+			title=title,
+			desc=desc,
+			url=page.url,
+			img=ogImgUrl,
+			img_alt=og_img_alt,
+			twitter_card_type="summary_large_image",
+			twitter_handle=twitterHandle,
+			twitter_title=twitter_title or title,
+			twitter_desc=twitter_desc or desc,
+			generator=eleventy.generator
+		%}
+
 		<link rel="preconnect" href="https://fonts.bunny.net">
-    <title>
-      {% block title %}purrl.org{% endblock %}
-    </title>
-    <meta charset="UTF-8"/>
-    {% if description %}
-      <meta name="description" content="{{description}}"/>
-    {% endif %}
-    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
 		<link href="https://fonts.bunny.net/css?family=libre-baskerville:400,400i" rel="stylesheet" />
 		<link rel="stylesheet" href="/style.css?v={% version %}"/>
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+		<link rel="manifest" href="/assets/site.webmanifest">
 
     {% block head %}{% endblock %}
   </head>

@@ -1,0 +1,38 @@
+{
+	"cohost": {
+		"canonicalName": "cohost",
+		"baseUrl": "https://cohost.org/",
+		"img": "/assets/cohost.svg",
+		"prefix": "@"
+	},
+	"twitter": {
+		"canonicalName": "Twitter",
+		"baseUrl": "https://twitter.com/",
+		"img": "/assets/twitter.svg",
+		"prefix": "@"
+	},
+	"twitch": {
+		"canonicalName": "Twitch",
+		"baseUrl": "https://twitch.tv/",
+		"img": "/assets/twitch.svg",
+		"prefix": ""
+	},
+	"telegram": {
+		"canonicalName": "Telegram",
+		"baseUrl": "https://t.me/",
+		"img": "/assets/telegram.svg",
+		"prefix": "@"
+	},
+	"mastodon": {
+		"canonicalName": "Mastodon",
+		"baseUrl": "https://",
+		"img": "/assets/mastodon.svg",
+		"prefix": ""
+	},
+	"tumblr": {
+		"canonicalName": "Tumblr",
+		"baseurl": "https://tumblr.com/",
+		"img": "/assets/tumblr-square.svg",
+		"prefix": ""
+	}
+}
