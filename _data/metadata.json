@@ -22,12 +22,12 @@
 			"handle": "purrl"
 		},
 		{
-			"service": "mastodon",
-			"handle": "@purrl@meemu.org"
-		},
-		{
 			"service": "bluesky",
 			"handle": "purrl.org"
+		},
+		{
+			"service": "mastodon",
+			"handle": "@purrl@meemu.org"
 		},
 		{
 			"service": "twitch",
