@@ -5,7 +5,7 @@ module.exports = {
 			s.forEach(network => {
 				const serviceData = data.socialnetworks[network.service]
 				network.url = serviceData.baseUrl + network.handle
-				if (serviceData.canonicalName == "Mastodon") {
+				if (serviceData.activitypub) {
 					// If we have a leading @, we might start with a blank entry in the array, so filter that out
 					const components = network.handle.split("@").filter(x => x.length > 0)
 					network.url = serviceData.baseUrl + components[1] + "/@" + components[0]

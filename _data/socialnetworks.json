@@ -3,42 +3,56 @@
 		"canonicalName": "cohost",
 		"baseUrl": "https://cohost.org/",
 		"img": "/assets/cohost.svg",
-		"prefix": "@"
+		"prefix": "@",
+		"activitypub": false
 	},
 	"twitter": {
 		"canonicalName": "Twitter",
 		"baseUrl": "https://twitter.com/",
 		"img": "/assets/twitter.svg",
-		"prefix": "@"
+		"prefix": "@",
+		"activitypub": false
 	},
 	"twitch": {
 		"canonicalName": "Twitch",
 		"baseUrl": "https://twitch.tv/",
 		"img": "/assets/twitch.svg",
-		"prefix": ""
+		"prefix": "",
+		"activitypub": false
 	},
 	"telegram": {
 		"canonicalName": "Telegram",
 		"baseUrl": "https://t.me/",
 		"img": "/assets/telegram.svg",
-		"prefix": "@"
+		"prefix": "@",
+		"activitypub": false
 	},
 	"mastodon": {
 		"canonicalName": "Mastodon",
 		"baseUrl": "https://",
 		"img": "/assets/mastodon.svg",
-		"prefix": ""
+		"prefix": "",
+		"activitypub": true
 	},
 	"tumblr": {
 		"canonicalName": "Tumblr",
 		"baseUrl": "https://tumblr.com/",
 		"img": "/assets/tumblr-square.svg",
-		"prefix": ""
+		"prefix": "",
+		"activitypub": false
 	},
 	"bluesky": {
 		"canonicalName": "Bluesky",
 		"baseUrl": "https://bsky.app/profile/",
 		"img": "/assets/square.svg",
-		"prefix": "@"
+		"prefix": "@",
+		"activitypub": false
+	},
+	"firefish": {
+		"canonicalName": "Firefish",
+		"baseUrl": "https://",
+		"img": "/assets/firefish.svg",
+		"prefix": "",
+		"activitypub": true
 	}
 }
