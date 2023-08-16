@@ -34,5 +34,11 @@
 		"baseUrl": "https://tumblr.com/",
 		"img": "/assets/tumblr-square.svg",
 		"prefix": ""
+	},
+	"bluesky": {
+		"canonicalName": "Bluesky",
+		"baseUrl": "https://bsky.app/profile/",
+		"img": "/assets/square.svg",
+		"prefix": "@"
 	}
 }
