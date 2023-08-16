@@ -31,7 +31,7 @@
 	},
 	"tumblr": {
 		"canonicalName": "Tumblr",
-		"baseurl": "https://tumblr.com/",
+		"baseUrl": "https://tumblr.com/",
 		"img": "/assets/tumblr-square.svg",
 		"prefix": ""
 	}
