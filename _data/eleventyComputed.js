@@ -16,5 +16,8 @@ module.exports = {
 			return s
 		}
 	},
-	twitterHandle: data => data.metadata.socials.find(x => (x.service == "twitter"))["handle"]
+	twitterHandle: data => {
+		var d = data.metadata.socials.find(x => (x.service == "twitter"))
+		return d !== undefined ? d["handle"] : ""
+	}
 }
