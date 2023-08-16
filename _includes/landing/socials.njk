@@ -1,5 +1,5 @@
 {% for network in metadata.socials %}
-<a rel="me" href="{{ network.url }}" alt="{{ network.altText }}">
+<a rel="me" href="{{ network.url }}" alt="{{ network.altText }}" title="{{ network.altText }}">
 	{{ network.svgUrl | svgContents("w-[25px] h-[25px]") | safe }}
 </a>
 {% endfor %}

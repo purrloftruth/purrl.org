@@ -13,7 +13,7 @@ eleventyComputed:
 	<div class="font-serif flex flex-col gap-8">
 		<h1 class="font-serif text-7xl">{{ title }}</h1>
 		<h2 class="font-serif text-4xl italic">{{ desc }}</h2>
-		<img class="mt-36 w-[75px] h-[54px]" src="{{ image }}" alt="{{ image_alt }}" />
+		<img class="mt-36 w-[75px] h-[54px]" src="{{ image }}" alt="{{ image_alt }}" title="{{ image_alt }}" />
 		<div class="flex flex-row gap-8">
 			{% include "landing/socials.njk" %}
 		</div>
