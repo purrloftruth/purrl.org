@@ -44,7 +44,7 @@
 	"bluesky": {
 		"canonicalName": "Bluesky",
 		"baseUrl": "https://bsky.app/profile/",
-		"img": "/assets/square.svg",
+		"img": "/assets/bluesky.svg",
 		"prefix": "@",
 		"activitypub": false
 	},
