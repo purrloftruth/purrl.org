@@ -3,7 +3,7 @@
 <html lang="en" class="h-full">
 
   <head>
-		{% set ogImgUrl %}{{ og_img | url }}{% endset %}
+		{% set ogImgUrl %}{{ metadata.ogImageDefault | url }}{% endset %}
 		
 		{% metagen 
 			title=title,
@@ -19,8 +19,21 @@
 		%}
 
 		<link rel="preconnect" href="https://fonts.bunny.net">
-		<link href="https://fonts.bunny.net/css?family=libre-baskerville:400,400i" rel="stylesheet" />
+
+		<link rel="preload" href="/style.css?v={% version %}" as="style"/>
+		<link rel="preload" href="https://fonts.bunny.net/css?family=libre-baskerville:400,400i" as="style"/>
+
+		<link rel="preload" href="https://fonts.bunny.net/libre-baskerville/files/libre-baskerville-latin-400-italic.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="https://fonts.bunny.net/libre-baskerville/files/libre-baskerville-latin-400-italic.woff" as="font" type="font/woff" crossorigin />
+		<link rel="preload" href="https://fonts.bunny.net/libre-baskerville/files/libre-baskerville-latin-ext-400-italic.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="https://fonts.bunny.net/libre-baskerville/files/libre-baskerville-latin-ext-400-italic.woff" as="font" type="font/woff" crossorigin />
+		<link rel="preload" href="https://fonts.bunny.net/libre-baskerville/files/libre-baskerville-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="https://fonts.bunny.net/libre-baskerville/files/libre-baskerville-latin-400-normal.woff" as="font" type="font/woff" crossorigin />
+		<link rel="preload" href="https://fonts.bunny.net/libre-baskerville/files/libre-baskerville-latin-ext-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="https://fonts.bunny.net/libre-baskerville/files/libre-baskerville-latin-ext-400-normal.woff" as="font" type="font/woff" crossorigin />
+
 		<link rel="stylesheet" href="/style.css?v={% version %}"/>
+		<link href="https://fonts.bunny.net/css?family=libre-baskerville:400,400i" rel="stylesheet"/>
 
 		<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">

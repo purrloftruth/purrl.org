@@ -6,14 +6,14 @@ image_alt: A kity. From far away, a lioness, with a frock of coral hair, sits, w
 og_img: /assets/og.png
 eleventyComputed:
   og_img_alt: image_alt
+layout: default.njk
 ---
-{% extends "default.njk" %}
 
 {% block content %}
 	<div class="font-serif flex flex-col gap-8">
-		<h1 class="font-serif text-7xl">{{ title }}</h1>
-		<h2 class="font-serif text-4xl italic">{{ desc }}</h2>
-		<img class="mt-36 w-[75px] h-[54px]" src="{{ image }}" alt="{{ image_alt }}" title="{{ image_alt }}" />
+		<h1 class="font-serif text-7xl">{{ metadata.landing.header }}</h1>
+		<h2 class="font-serif text-4xl italic">{{ metadata.landing.subheader }}</h2>
+		<img class="mt-36 w-[75px] h-[54px]" src="{{ metadata.landing.img }}" alt="{{ metadata.landing.imgAlt }}" title="{{ metadata.landing.imgAlt }}" />
 		<div class="flex flex-row gap-8">
 			{% include "landing/socials.njk" %}
 		</div>

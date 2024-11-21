@@ -8,11 +8,12 @@
     "email": "",
     "url": ""
   },
+	"ogImageDefault": "/assets/og.png",
 
 	"landing": {
 		"header": "Pearl Nayker",
 		"subheader": "professional kity",
-		"img": "/assets/og.png",
+		"img": "/assets/kity@2x.png",
 		"imgAlt": "A kity. From far away, a lioness, with a frock of coral hair, sits, watching."
 	},
 
