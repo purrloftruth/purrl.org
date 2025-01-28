@@ -1,13 +1,13 @@
 {
-  "title": "purrl.org",
-  "baseUrl": "https://purrl.org/",
-  "language": "en",
-  "description": "The personal website of Pearl Nayker",
-  "author": {
-    "name": "Pearl Nayker",
-    "email": "",
-    "url": ""
-  },
+	"title": "purrl.org",
+	"baseUrl": "https://purrl.org/",
+	"language": "en",
+	"description": "The personal website of Pearl Nayker",
+	"author": {
+		"name": "Pearl Nayker",
+		"email": "",
+		"url": ""
+	},
 	"ogImageDefault": "/assets/og.png",
 
 	"landing": {
@@ -28,7 +28,7 @@
 		},
 		{
 			"service": "telegram",
-			"handle": "purrl"
+			"handle": "pearlnayker"
 		}
 	]
 }
